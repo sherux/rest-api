@@ -8,7 +8,7 @@ app.use("/api", route);
 
 app.use(express.json());
 mongoose
-  .connect("mongodb://localhost:27017/company", {})
+  .connect("mongodb://localhost:27017/company")
   .then(() => {
     console.log("connect the databse");
   })
